@@ -1,0 +1,71 @@
+:root {
+  --inter: "Inter";
+  --exo: "Exo 2";
+  --white: #ffffff;
+  --black: #020105;
+  --green: #219653;
+  --bg-gradient: linear-gradient(180deg, #219653 0%, #108743 100%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--inter), sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth !important;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 120vh;
+}
+
+main {
+  flex: 1 1 auto;
+  padding-top: 160px;
+}
+
+button {
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+}
+
+.box {
+  max-width: calc(1224px + 32px);
+  width: 100%;
+  margin: 0 auto;
+  padding-inline: 16px;
+  /* border: 1px solid red; */
+}
+
+.logo {
+  display: inline-block;
+  background-image: url("/assets/media/logo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 146px;
+  height: 59px;
+}
+
+.page_title {
+  font-family: var(--exo), sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.section_title {
+  font-family: var(--exo), sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 56px;
+  text-transform: uppercase;
+  /* color: var(--white); */
+}
